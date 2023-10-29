@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    background-image: url(../svg-files/bg-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 16px;
+}
+
+.page-icon {
+    padding-top: 25px;
+    margin-left: 80px;
+}
+
+/* Container modifications */
+
+.container {
+    color: white;
+    margin: 100px auto 30px;
+}
+
+.container .text-header {
+    max-width: 700px;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    margin: 0 auto;
+}
+
+.container .text-header .paragraph {
+    margin: 20px 0;
+}
+
+/* Form modifications */
+
+.form-container {
+    max-width: 800px;
+    border-radius: 28px;
+    padding: 16.5px 33px 33px;
+    background-color: #cdd5e02d;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 17px;
+}
+
+.form-container .outline:focus {
+    outline: none;
+}
+
+.form-container label {
+    font-size: 0.875em;
+    font-weight: 400;
+}
+
+.form-container .name,
+.form-container .comp-email,
+.form-container .comp-size,
+.form-container .comp-subject,
+.form-container .message {
+    width: 300px;
+    flex-grow: 1;
+    margin: 13px 0;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea,
+.contact-sales-button {
+    display: block;
+    padding: 23px 20px;
+    width: 100%;
+    border-radius: 15px;
+    border: 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 3px;
+}
+
+.form-container input::placeholder {
+    color: #CDD5E0;
+}
+
+.form-container select,
+.form-container textarea {
+    font-weight: 700;
+}
+
+.form-container select {
+    padding: 23px 18px;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1em top 50%, 0, 0;
+    background-size: 1.8em
+}
+
+.form-container textarea {
+    resize: none;
+}
+
+.contact-sales-button {
+    text-align: center;
+    color: #4036A9;
+    background-color: white;
+}
+
+.contact-sales-button h3 {
+    font-size: 1.25rem;
+}
+
+
+@media only screen and (min-width : 0px) and (max-width: 319px) {
+    .page-icon {
+        padding-top: 20px;
+        margin-left: 0;
+    }
+
+    .header {
+        font-size: 1.2rem;
+    }
+
+    .paragraph {
+        padding-top: 30px;
+        font-size: 1.4rem;
+    }
+
+    .form-container {
+        padding-bottom: 50px;
+    }
+
+    .form-container select {
+        background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 50% top 100%, 0, 0;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width: 768px) {
+    .page-icon {
+        margin-left: 25px;
+
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+
+    .form-container .name,
+    .form-container .comp-email,
+    .form-container .comp-size,
+    .form-container .comp-subject,
+    .form-container .message {
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+
+    .page-icon {
+        margin-left: 50px;
+    }
+
+    .container {
+        padding: 0 35px;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+
+    .form-container .name,
+    .form-container .comp-email,
+    .form-container .comp-size,
+    .form-container .comp-subject,
+    .form-container .message {
+        width: 350px;
+        flex-grow: 1;
+        margin: 13px 0;
+
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" sizes="512x512">
+
+    <title>Contact Page</title>
+</head>
+
+<body>
+
+    <div class="page-icon">
+        <img src="./svg-files/contact-form-icon.svg">
+    </div>
+
+    <div class="container">
+
+        <div class="text-header">
+            <div class="header">
+                <h1>Interested in our business pricing?</h1>
+            </div>
+            <div class="paragraph">
+                <p>Fill out the form to view details and we’ll contact you as soon as possible.</p>
+            </div>
+        </div>
+
+        <form action="https.google.com" method="POST">
+            <div class="form-container">
+
+
+                <div class="name">
+                    <label for="user-name">Name
+                        <input class="outline" type="text" id="user-name" name="name" placeholder="Ethan Johnson"
+                            required> </label>
+                </div>
+
+                <div class="comp-email">
+                    <label for="company-email">Company Email <input class="outline" type="email" id="company-email"
+                            name="email" placeholder="ethan@johnson.com" required>
+                    </label>
+                </div>
+
+                <div class="comp-size">
+                    <label for="company-size">
+                        Company Size
+                        <select id="company-size" class="outline">
+                            <option value="1">50-100 employees</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="comp-subject">
+                    <label for="company-subject">
+                        Subject
+                        <select id="company-subject" class="outline">
+                            <option value="1">Building Landing Page</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="message">
+                    <label for="message-footer">
+                        Message
+                        <textarea id="message-footer" cols="10" rows="10" class="outline">50-100 employees</textarea>
+                    </label>
+                </div>
+
+                <div class="contact-sales-button">
+                    <h3>Contact Sales</h3>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
